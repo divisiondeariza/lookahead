@@ -1,7 +1,8 @@
 <div class="jumbotron">
   <h1>Timbre aquí</h1>
   <p class="lead">
-     <input type="text" ng-model="selected" uib-typeahead="tag for tag in tags | filter:$viewValue | limitTo:8" class="form-control">
+     <input type="text" ng-model="selected" uib-typeahead="tag for tag in tags | filter:$viewValue | limitTo:8" class="form-control"/>
+     <a type="button" class="btn btn-default" ng-href="#!/results?q={{selected}}">search</a>
   </p>
 </div>
 
